@@ -1,0 +1,28 @@
+até 20
+UPDATE aluno_dim
+SET faixa_etaria = 'até 20 anos'
+WHERE data_nascimento >= '11/07/2003'
+
+de 21 até 25
+UPDATE aluno_dim
+SET faixa_etaria = 'de 21 até 25 anos'
+WHERE data_nascimento >= '11/07/1998' AND 
+data_nascimento <= '10/07/2003'
+
+de 26 até 30
+UPDATE aluno_dim
+SET faixa_etaria = 'de 26 até 30 anos'
+WHERE data_nascimento >= '11/07/1988' AND 
+	  data_nascimento <= '10/07/1993'
+
+de 31 até 35
+UPDATE aluno_dim
+SET faixa_etaria = 'entre 31 e 35 anos'
+WHERE data_nascimento >= '11/07/1988' AND 
+data_nascimento <= '10/07/1993'
+
+
+mais de 35 
+UPDATE aluno_dim
+SET faixa_etaria = 'acima de 35 anos'
+WHERE data_nascimento <= '10/07/1988'
